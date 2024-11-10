@@ -1,0 +1,35 @@
+/* header section  */
+header{
+    background: #000;
+}
+header a.admin-name{
+    width: 188px;
+    border-bottom: 2px #ffffff ;
+    z-index: 999;
+    text-align: center;
+    
+    
+}
+header .navbar{
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  
+}
+.navbar .nav-item a.na-link{
+    color: #ffffff;
+}
+/* header .navbar::before{
+    display: absolute;
+    content: '';
+    right: -500px;
+    top: 0;
+    width: 50px;
+    height: 40px;
+    background: #000;
+}  */
+/* aside section  */
+.main-content aside{
+    width: 200px;
+    min-height: 95vh;
+    
+}
+

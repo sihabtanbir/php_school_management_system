@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+:root{
+    --main_color: #d65822;
+}
+a{
+    text-decoration: none;
+}
+.btn-unique{
+    background: var(--main_color);
+    color: #fff;
+    padding: 10px 12px;
+    border-radius: 5px;
+    font-size: 22px;
+}
+.btn-unique:hover{
+    color:#000;
+}
+
+
+.top-header{
+    background:var(--main_color)
+}
+header .header-top{
+    
+    color:#fff;
+    display: flex; 
+    justify-content: space-between;
+} 
+
+header .header-top a{
+    text-decoration: none;
+    color:white;
+}
+header .header-top ul li{
+    list-style: none;
+    color:#fff;
+}
+header .header-top .header-icons ul{
+    display: flex;
+    margin: 0;
+    
+  
+}
+header .header-top .header-icons ul li{
+    padding: 10px;
+    border-right: 1px solid #fff;
+
+}
+
+header .header-top .header-contact ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+header .header-top .header-contact p{
+    display: inline-block;
+    color: #fff;
+}
+header .header-top .header-contact ul li{
+    padding: 10px;
+    margin: 0;
+
+}
+.search-controll input{
+    border:0;
+    border-bottom: 1px solid var(--main_color);
+}
+.main-navbar nav ul li a{
+    font-size: 20px;
+}
+.main-navbar nav ul li:hover{
+    background: var(--main_color);
+    color: #fff;
+}
+
+.main-navbar .nav-item a.nav-link:hover{
+    color: #fff;
+}
+.search-controll button:hover{
+    color:var(--main_color);
+}
+
+.slider .carousel-item img{
+    height: 95vh;
+}
+
+.slider .carousel-caption{
+    
+    background: rgba(0, 0, 0, 0.4);
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.slider .carousel-caption h3{
+    font-weight: 700;
+    font-size: 48px;
+}
