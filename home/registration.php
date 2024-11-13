@@ -10,7 +10,7 @@
  $register = new Register();
 
  if(isset($_POST["submit"])){
-  $result = $register->registration($_POST["firstname"],$_POST["lastname"],$_POST["email"],$_POST["phone"],$_POST["type"],$_POST["password"]);
+  $result = $register->registration($_POST["firstname"],$_POST["lastname"],$_POST["email"],$_POST["phone"],$_POST["type"],$_POST["password"],);
 
   if($result == 1){
     echo 

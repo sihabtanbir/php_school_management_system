@@ -20,7 +20,7 @@
             
         }else{
             
-                $insert= "INSERT INTO `users` VALUES('$firstname', '$lastname', '$email', '$phone', '$type', '$password')";
+                $insert= "INSERT INTO `users` VALUES('$firstname', '$lastname', '$email', '$phone', '$type', '$password','','')";
                 mysqli_query($this->conn, $insert);
                 echo "<script>alert('successful registration')</script>";
             }
@@ -60,6 +60,26 @@
 
             $result = mysqli_query($this->conn, "SELECT * FROM `users` WHERE email = '$email' ");
             return mysqli_fetch_assoc($result);
+        }
+    }
+    class Total extends Connection{
+        public $count;
+        public function Admin(){
+            $result = mysqli_query($this->conn, "SELECT * FROM `users` WHERE type = 'Admin' ");
+             if($count = mysqli_num_rows($result)){
+                echo " $count";
+             }else{
+                echo " 0";
+             }
+        }
+
+        public function Teacher(){
+            $result = mysqli_query($this->conn, "SELECT * FROM `users` WHERE type = 'Teacher' ");
+             if($count = mysqli_num_rows($result)){
+                echo " $count ";
+             }else{
+                echo " 0";
+             }
         }
     }
  
