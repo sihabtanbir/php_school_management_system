@@ -33,7 +33,7 @@
             ?>
           </h2>
           <hr>
-          <a href="#" class="text-center d-block text-light">See Details</a>
+          <a href="admin-manage.php" class="text-center d-block text-light">See Details</a>
           
         </div>
       </div>
@@ -48,7 +48,7 @@
             ?>
           </h2>
           <hr>
-          <a href="#" class="text-center d-block text-light">See Details</a>
+          <a href="teacher-manage.php" class="text-center d-block text-light">See Details</a>
           
         </div>
       </div>

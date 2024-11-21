@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="back-styles.css">
+    <title>Student Add </title>
 </head>
 <body>
 
@@ -19,7 +20,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="admin-manage.php">Admin</a></li>
-            <li><a class="dropdown-item" href="#">Teacher</a></li>
+            <li><a class="dropdown-item" href="teacher-manage.php">Teacher</a></li>
             
             <li><a class="dropdown-item" href="#">Students</a></li>
           </ul>
@@ -32,12 +33,12 @@
   </li>
   <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+            Students Management
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="add-student.php">Add Student</a></li>
+            <li><a class="dropdown-item" href="#">List Student</a></li>
+            
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>

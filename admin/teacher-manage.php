@@ -20,7 +20,7 @@
      <?php  include 'aside.php'; ?>
     <main class="w-75 mx-auto">
       <div class="container m-4 text-center ">
-        <h2 class="text-center m-auto p-2">Admin List </h2>
+        <h2 class="text-center m-auto p-2">Teachers List </h2>
 
         <div class="admin-table">
         <table class="table table-striped ">
@@ -40,7 +40,7 @@
     <?php 
       require 'db_connect.php';
 
-     $sql = "SELECT * FROM `users` WHERE type='Admin'  ";
+     $sql = "SELECT * FROM `users` WHERE type='Teacher'  ";
      $result =$connect->query($sql);
      if($result-> num_rows > 0 ){
       while($row = $result->fetch_assoc()){
