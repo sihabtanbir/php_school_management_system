@@ -14,11 +14,11 @@
     $birth = $_POST['birth'];
     $birth_number = $_POST['birth_number'];
 
-    $insert5 = "INSERT INTO students(name, class, section, kind, roll, email, phone,image, birth, birth_number) VALUES('$name', '$class', '$section', '$kind', '$roll', '$email', '$phone', '$image', '$birth', '$birth_number')";
+    $insert5 = "INSERT INTO students VALUES('','$name', '$class', '$section', '$kind', '$roll', '$email', '$phone', '$image', '$birth', '$birth_number')";
     $run1= mysqli_query($connect, $insert5);
 
 
-    $insert2 = "INSERT INTO students_mark(name, class, section,roll)VALUES('$name', '$class', '$section', '$roll')";
+    $insert2 = "INSERT INTO students_mark(id,name, class, section,roll)VALUES('','$name', '$class', '$section', '$roll')";
     mysqli_query($connect, $insert2);
 
     echo "<script>alert('student add successful')</script>";

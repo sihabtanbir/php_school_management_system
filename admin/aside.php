@@ -37,7 +37,10 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="add-student.php">Add Student</a></li>
-            <li><a class="dropdown-item" href="#">List Student</a></li>
+            <li><a class="dropdown-item" href="list-students.php">List Student</a></li>
+            <li><a class="dropdown-item" href="add-mark.php">Add Mark</a></li>
+            <li><a class="dropdown-item" href="mark-sheed.php">Mark Sheed</a></li>
+            
             
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>

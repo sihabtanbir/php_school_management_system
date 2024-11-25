@@ -81,5 +81,14 @@
                 echo " 0";
              }
         }
+
+        public function Students(){
+            $result = mysqli_query($this->conn, "SELECT * FROM `students` ");
+             if($count = mysqli_num_rows($result)){
+                echo " $count ";
+             }else{
+                echo " 0";
+             }
+        }
     }
  

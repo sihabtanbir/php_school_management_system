@@ -57,7 +57,11 @@
         
         <div class="card-body text-light ">
           <h5 class="card-title text-center text-light">total students</h5>
-          <h2 class="text-center">20</h2>
+          <h2 class="text-center">
+          <?php $total = new Total();
+            $student_count = $total->Students();
+            ?>
+          </h2>
           <hr>
           <a href="#" class="text-center d-block text-light">See Details</a>
           
