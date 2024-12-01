@@ -45,9 +45,9 @@
         <h2 class="m-2 text-center">Add Student</h2>
       <div class="container">
     <form class="row g-3" method="post" action="" autocomplete="off">
-  <div class="col-md-6 col-12">
+  <div class="col-md-6 col-12" style="text-transform: capitalize;">
     <label for="validationDefault01" class="form-label">Full name</label>
-    <input type="text" class="form-control" id="validationDefault01" placeholder="Hasan Ali" name="name" required>
+    <input type="text" class="form-control" id="validationDefault01" placeholder="Hasan Ali" name="name" required style="text-transform: capitalize;">
   </div>
 
   <div class="col-md-6 col-12">

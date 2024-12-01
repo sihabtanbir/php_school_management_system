@@ -59,7 +59,7 @@
         public function Email($email){
 
             $result = mysqli_query($this->conn, "SELECT * FROM `users` WHERE email = '$email' ");
-            return mysqli_fetch_assoc($result);
+            return $row = mysqli_fetch_assoc($result);
         }
     }
     class Total extends Connection{

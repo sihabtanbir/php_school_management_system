@@ -20,6 +20,22 @@
      <?php  include 'aside.php'; ?>
     <main class="w-75 mx-auto">
       <div class="container m-4 text-center ">
+      <form action="" method="post" class="d-flex" autocomplete="yes">
+            <select name="class" id="" class="form-select mr-2 w-100">
+              <option value="one">one</option>
+              <option value="two">two</option>
+              <option value="three">three</option>
+              <option value="four">four</option>
+              <option value="five">five</option>
+              <option value="six">six</option>
+              <option value="seven">seven</option>
+              <option value="eight">eight</option>
+              <option value="nine">nine</option>
+              <option value="ten">ten</option>
+            </select>
+            <button type="submit" name="search6" class="btn btn-unique">Search</button>
+          </form>
+
         <h2 class="text-center m-auto p-2">Students List </h2>
 
         <div class="admin-table">
@@ -35,7 +51,7 @@
       <th scope="col">Phone</th>
       <th scope="col">Image</th>
       <th scope="col">Birth</th>
-      <th scope="col">birth date</th>
+      <th scope="col">birth Number</th>
       <th scope="col">edit</th>
       <th scope="col">delete</th>
     </tr>
@@ -43,12 +59,18 @@
   <tbody>
     <tr>
     <?php 
-      require 'db_connect.php';
+      
+     
+           require 'db_connect.php';
 
-     $sql = "SELECT * FROM `students`  ";
-     $result =$connect->query($sql);
-     if($result-> num_rows > 0 ){
-      while($row = $result->fetch_assoc()){
+           if(isset($_POST['search6'])){
+             $class = $_POST['class'];
+             
+             $search2 =" SELECT * FROM `students` WHERE class = '$class' ";
+             $result = mysqli_query($connect, $search2);
+             if($result-> num_rows > 0 ){
+               while($row = $result->fetch_assoc()){
+     
         echo "<tr>
           <td> $row[name] </td>
            <td> $row[class] </td>
@@ -65,7 +87,12 @@
                <td> <a>delete</a> </td>
         </tr> ";
       }
-     }
+     } 
+     else{
+      echo 'no data found';
+    }
+    }
+    
      ?>
       
     </tr>

@@ -68,7 +68,7 @@
       <p class="text-center">Class <?php echo $class; ?> Mark Sheet Final 24</p>
       <?php } ?>
 
-    <table class=" table table-striped border border-collaps text-center">
+    <table class=" table table-striped text-center">
       
       <thead>
         <tr class="bg-dark text-light ">
